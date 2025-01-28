@@ -54,7 +54,7 @@ plt.title("Gas Price Forecast" , fontweight = 'bold')
 plt.legend()
 
 
-
+# A function to get the gas price in the years given or one year into the future
 def get_gas_price (month, year):
     price = (round(final[(final["Month"]==month) & (final["Year"]==year)]["Prices"].iloc[0],2))
     print(f"The Gas price for the {month} month of {year} is ${price}")
