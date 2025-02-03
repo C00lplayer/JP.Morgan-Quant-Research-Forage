@@ -29,12 +29,13 @@ model = LogisticRegression()
 model.fit(X_train_scaled, Y_train)
 
 # Compare the predicted outputs from the model to the actual outputs and display as confusion matrix so analyse accuracy
+"""
 y_pred = model.predict(x_test_scaled)
 cm = confusion_matrix(Y_test, y_pred)
 disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=["No Default", "Default"])
 disp.plot(cmap="Reds")
 plt.show()
-
+"""
 
 # A function which takes in the properties for the loan and predicts the probability of defaulting from the model created and the expected loss
 def predict_expected_loss(credit_lines_outstanding, loan_amt_outstanding, total_debt_outstanding, income, years_employed, fico_score):
