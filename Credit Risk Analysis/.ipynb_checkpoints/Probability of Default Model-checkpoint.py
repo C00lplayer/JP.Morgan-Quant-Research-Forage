@@ -30,7 +30,7 @@ model.fit(X_train_scaled, Y_train)
 
 # Compare the predicted outputs from the model to the actual outputs and display as confusion matrix so analyse accuracy
 """
-y_pred = model.predict(x_test_scaled)
+y_pred = model.predict(X_test_scaled)
 cm = confusion_matrix(Y_test, y_pred)
 disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=["No Default", "Default"])
 disp.plot(cmap="Reds")
